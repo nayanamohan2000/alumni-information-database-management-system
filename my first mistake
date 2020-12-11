@@ -1,0 +1,12 @@
+create table alumni(
+id varchar(30)primary key,
+fname varchar(100)not null,lname varchar(100)not null,
+gender char not null,passed_out_year year not null,cgpa decimal not null,
+current_work varchar(300),state varchar(100),mail_id varchar(100)not null,
+mobile int(10),foreign key comapany_visits_campus_id int references company_visits_campus(company_visits_capus_id) , 
+ foreign key dept_id varchar(20) references department(dept_id),
+
+);
+
+
+
