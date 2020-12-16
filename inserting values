@@ -6,7 +6,6 @@ INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D05', 'TE
 INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D06', 'ME');
 INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D07', 'CIVIL');
 INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D08', 'BIOTECH');
-
 (VALUES INSERTED INTO THE DEPARTMENT TABLE)
 
 INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C01', 'GOOGLE', '3.5 LPA', '20 LPA', '7.5');
@@ -19,10 +18,13 @@ INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highe
 INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C08', 'CISCO', '3 LPA', '15 LPA', '7');
 INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C09', 'HAVELLS', '3.5 LPA', '6 LPA', '8.5');
 INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C10', 'PRESTGE', '4 LPA', '8 LPA', '8');
-
 (VALUES INSERTED INTO THE COMPANY TABLE)
 
 INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('CA01', 'DSCE', 'KUMARASWAMY LAYOUT', 'BANGLORE');
 INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('CA02', 'DSATM', 'UDIPALYA,KANAKAPURA ROAD', 'BANGLORE');
 INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('CA03', 'DSU', 'KUDLU GATE,HOSUR ROAD', 'BANGLORE');
 (VALUES INSERTED INTO THE CAMPUS TABLE)
+
+INSERT INTO `alumnidb`.`user_info` (`mail_id`, `password`) VALUES ('abc.123@gmail.com', 'abc.123@');
+INSERT INTO `alumnidb`.`user_info` (`mail_id`, `password`) VALUES ('xyz.123@gmail.com', 'xyz.123@');
+(VALUES INSERTED INTO THE USER_INFO TABLE)
