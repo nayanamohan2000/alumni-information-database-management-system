@@ -1,0 +1,11 @@
+ALTER TABLE `alumnidb`.`company_visits_campus` 
+ADD CONSTRAINT `campus_id`
+  FOREIGN KEY ()
+  REFERENCES `alumnidb`.`campus` ()
+  ON DELETE CASCADE
+  ON UPDATE CASCADE,                              (altered table company visits campus)
+ADD CONSTRAINT `company_id`
+  FOREIGN KEY ()
+  REFERENCES `alumnidb`.`company` ()
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
