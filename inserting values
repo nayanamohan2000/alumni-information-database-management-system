@@ -8,3 +8,16 @@ INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D07', 'CI
 INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D08', 'BIOTECH');
 
 (VALUES INSERTED INTO THE DEPARTMENT TABLE)
+
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C01', 'GOOGLE', '3.5 LPA', '20 LPA', '7.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C02', 'MICROSOFT', '3 LPA', '15 LPA', '7');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C03', 'ADOBE', '4 LPA', '12 LPA', '7.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C04', 'APPLE', '4.5 LPA', '18 LPA', '8.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C05', 'FACEBOOK', '3.5 LPA', '15 LPA', '6.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C06', 'AMAZON', '3 LPA', '12 LPA', '7');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C07', 'IBM', '3.5 LPA', '10 LPA', '7.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C08', 'CISCO', '3 LPA', '15 LPA', '7');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C09', 'HAVELLS', '3.5 LPA', '6 LPA', '8.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C10', 'PRESTGE', '4 LPA', '8 LPA', '8');
+
+(VALUES INSERTED INTO THE COMPANY TABLE)
