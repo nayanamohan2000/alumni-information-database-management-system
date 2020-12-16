@@ -28,3 +28,12 @@ INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('C
 INSERT INTO `alumnidb`.`user_info` (`mail_id`, `password`) VALUES ('abc.123@gmail.com', 'abc.123@');
 INSERT INTO `alumnidb`.`user_info` (`mail_id`, `password`) VALUES ('xyz.123@gmail.com', 'xyz.123@');
 (VALUES INSERTED INTO THE USER_INFO TABLE)
+
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('1', 'CA01', 'C01', '10-1-2011');
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('2', 'CA01', 'C03', '12-1-2011');
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('3', 'CA01', 'C04', '12-1-2012');
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('4', 'CA02', 'C01', '13-1-2013');
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('5', 'CA02', 'C02', '14-1-2014');
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('6', 'CA02', 'C06', '15-1-2015');
+INSERT INTO `alumnidb`.`company_visits_campus` (`company_visits_campus_id`, `campus_id`, `company_id`, `date_of_visit`) VALUES ('7', 'CA03', 'C09', '16-1-2016');
+(VALUES INSERTED INTO THE COMPANY_VISITS_CAMPUS TABLE)
