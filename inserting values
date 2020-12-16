@@ -1,0 +1,10 @@
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D01', 'CSE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D02', 'ISE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D03', 'EC');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D04', 'EEE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D05', 'TELECOM');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D06', 'ME');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D07', 'CIVIL');
+INSERT INTO `alumnidb`.`department` (`department_id`, `name`) VALUES ('D08', 'BIOTECH');
+
+(VALUES INSERTED INTO THE DEPARTMENT TABLE)
