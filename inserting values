@@ -21,3 +21,8 @@ INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highe
 INSERT INTO `alumnidb`.`company` (`company_id`, `name`, `lowest_package`, `highest_package`, `cotoff`) VALUES ('C10', 'PRESTGE', '4 LPA', '8 LPA', '8');
 
 (VALUES INSERTED INTO THE COMPANY TABLE)
+
+INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('CA01', 'DSCE', 'KUMARASWAMY LAYOUT', 'BANGLORE');
+INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('CA02', 'DSATM', 'UDIPALYA,KANAKAPURA ROAD', 'BANGLORE');
+INSERT INTO `alumnidb`.`campus` (`campus_id`, `name`, `area`, `city`) VALUES ('CA03', 'DSU', 'KUDLU GATE,HOSUR ROAD', 'BANGLORE');
+(VALUES INSERTED INTO THE CAMPUS TABLE)
