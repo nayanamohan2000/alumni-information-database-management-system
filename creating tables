@@ -1,0 +1,73 @@
+CREATE TABLE `alumnidbms`.`user_info` (
+  `mail_id` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NOT NULL COMMENT 'user login details.',    (created user_info table)
+  PRIMARY KEY (`mail_id`),
+  UNIQUE INDEX `mail_id_UNIQUE` (`mail_id` ASC) VISIBLE);
+
+
+CREATE TABLE `alumnidbms`.`user_info` (
+  `mail_id` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NOT NULL COMMENT 'user login details.',    (created department table)
+  PRIMARY KEY (`mail_id`),
+  UNIQUE INDEX `mail_id_UNIQUE` (`mail_id` ASC) VISIBLE);
+
+
+CREATE TABLE `alumnidbms`.`campus` (
+  `campus_id` VARCHAR(30) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `area` VARCHAR(45) NULL,
+  `city` VARCHAR(45) NOT NULL,                                      (created campus table)
+  PRIMARY KEY (`campus_id`),                                           
+  UNIQUE INDEX `campus_id_UNIQUE` (`campus_id` ASC) VISIBLE)
+COMMENT = 'campus informations.';
+
+
+CREATE TABLE `alumnidbms`.`company` (
+  `company_id` VARCHAR(30) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `lowest_package` VARCHAR(45) NULL,                              (created company table)
+  `highest_package` VARCHAR(45) NULL,
+  `cutoff` DECIMAL NOT NULL,
+  PRIMARY KEY (`company_id`),
+  UNIQUE INDEX `company_id_UNIQUE` (`company_id` ASC) VISIBLE,
+  UNIQUE INDEX `name_UNIQUE` (`name` ASC) VISIBLE)
+COMMENT = 'company informations.';
+
+
+CREATE TABLE `alumnidbms`.`company_visits_campus` (
+  `company_visits_campus_id` INT NOT NULL,
+  `campus_id` VARCHAR(45) NULL,
+  `company_visits_campus_col` VARCHAR(45) NULL,                   (created company_visits_compus)
+  `date_of_visit` DATE NULL,
+  PRIMARY KEY (`company_visits_campus_id`),
+  UNIQUE INDEX `company_visits_campus_id_UNIQUE` (`company_visits_campus_id` ASC) VISIBLE)
+COMMENT = 'relation between company and campus.';
+
+
+CREATE TABLE `alumnidbms`.`alumni` (
+  `alumni_id` VARCHAR(30) NOT NULL,
+  `fname` VARCHAR(100) NOT NULL,
+  `lname` VARCHAR(100) NOT NULL,
+  `gender` CHAR NOT NULL COMMENT 'posibilities\nF=female\nM=male',
+  `passes_out_year` YEAR NOT NULL,
+  `cgpa` DECIMAL(5) NOT NULL,
+  `current_work` TINYTEXT NULL,                     (created alumni table)
+  `state` VARCHAR(80) NULL,
+  `mail_id` VARCHAR(100) NOT NULL,
+  `mobile` INT(10) NOT NULL,
+  `company_visits_campus_id` INT NULL,
+  `dept_id` VARCHAR(45) NULL,
+  PRIMARY KEY (`alumni_id`),
+  UNIQUE INDEX `alumni_id_UNIQUE` (`alumni_id` ASC) VISIBLE,
+  UNIQUE INDEX `mail_id_UNIQUE` (`mail_id` ASC) VISIBLE)
+COMMENT = 'alumni informations.';
+DROP TRIGGER IF EXISTS `alumnidbms`.`alumni_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `alumnidbms`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `alumnidbms`.`alumni_BEFORE_INSERT` BEFORE INSERT ON `alumni` FOR EACH ROW
+BEGIN
+
+END
+$$
+DELIMITER ;
