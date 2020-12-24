@@ -1,0 +1,33 @@
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D01', 'CSE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D02', 'ISE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D03', 'ECE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D04', 'EEE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D05', 'TCE');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D06', 'MECH');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D07', 'CIVIL');
+INSERT INTO `alumnidb`.`department` (`department_id`, `dept_name`) VALUES ('D08', 'BIOTECH');
+
+
+INSERT INTO `alumnidb`.`campus` (`campus_id`, `campus_name`, `area`, `city`) VALUES ('CA01', 'DSCE', 'Kumaraswamy layout', 'banglore');
+INSERT INTO `alumnidb`.`campus` (`campus_id`, `campus_name`, `area`, `city`) VALUES ('CA02', 'DSATM', 'udipalya, kanakapura road', 'banglore');
+INSERT INTO `alumnidb`.`campus` (`campus_id`, `campus_name`, `area`, `city`) VALUES ('CA03', 'DSU', 'kudlu gate , hosur road', 'banglore');
+
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C01', 'Google', '3.5 LPA', '20 LPA', '7.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C02', 'Microsoft', '3  LPA', '15 LPA', '7');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C03', 'Adobe', '4  LPA', '12 LPA', '7.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C04', 'Apple', '4.5 LPA', '18 LPA', '8.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C05', 'Facebook', '3.5 LPA', '15 LPA ', '6.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C06', 'Amazon', '3  LPA', '12 LPA', '7');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C07', 'IBM', '3.5 LPA', '10 LPA', '7.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C08', 'Cisco', '3 LPA ', '15 LPA', '7');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C09', 'Havells', '3.5 LPA', '6 LPA', '8.5');
+INSERT INTO `alumnidb`.`company` (`company_id`, `comapny_name`, `lowest_package`, `highest_package`, `cut_off`) VALUES ('C10', 'Prestige', '4 LPA', '8 LPA', '8');
+
+
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A01', 'Niharika', 'NM', 'F', 2011, '8.56', 'SDE at Google', 'Karnataka', 'abc@gmail.com', '8971645516', '4', 'D02');
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A02', 'Jord', 'India', 'M', 2011, '9.06', 'CEO at Clab.inet', 'Kerala', 'xyz@gmail.c0m', '9731595716', '4', 'D02');
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A03', 'Sejal', 'Kumar', 'F', 2017, '7.21', '-', 'Tamil Nadu', 'pqr@gmail.c0m', '9620994384', '4', 'D02');
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A04', 'Mostly', 'Sane', 'F', 2016, '7.60', 'higher studies', 'Punjab', 'sed@gmail.com', '8971645561', '1', 'D03');
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A05', 'Rakhi', 'Singh', 'F', 2014, '8.9', 'Manger at Microsoft', 'Maharastra', 'hfy@gmail.com', '9731595761', '5', 'D05');
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A06', 'Karthik', 'swaroop', 'M', 2013, '6.7', 'Network scients at Cisco', 'Hyderabad', 'swa@gmail.com', '9620994348', '7', 'D04');
+INSERT INTO `alumnidb`.`alumni` (`alumni_id`, `fname`, `lname`, `gender`, `passed_out_year`, `cgpa`, `current_work`, `state`, `mail_id`, `mobile`, `company_visits_campus_id`, `department_id`) VALUES ('A07', 'Karthik', 'M', 'M', 2012, '7.1', 'Graphic design engineer', 'Karnataka', 'kar@gmail.com', '897130689', '7', 'D01');
